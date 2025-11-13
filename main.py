@@ -9,6 +9,10 @@ class Vehicle:
         self.color = color
         self.wheels = wheels
         self.mileage = 0
+        # da das wiederholt angesprochen wurde: dieses return ist für den Code völlig egal.
+        # wenn man nach einem return eine neue Zeile einfügt, rückt VSC einen automatisch ein,
+        # damit man direkt mit der def einer neuen Funktion anfangen kann.
+        # Dadurch ist es später einfacher, neue Methoden einzufügen, ohne sich lange mit der Einrückung zu befassen.
         return None
 
     # jedes Fahrzeug kann fahren, daher ist die Methode hier sinnvoll
@@ -81,6 +85,7 @@ class Mofa(Bycicle, Car):
     @staticmethod
     def honk():
         super().bell()
+        return None
 
 obj1 = Car("Tesla", "1", "white", "electric", 0.01)
 
